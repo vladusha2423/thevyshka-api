@@ -1,0 +1,16 @@
+/home/dvv2423/RiderProjects/TheVyshka/TheVyshka.Data/bin/Debug/netcoreapp3.1/TheVyshka.Data.deps.json
+/home/dvv2423/RiderProjects/TheVyshka/TheVyshka.Data/bin/Debug/netcoreapp3.1/TheVyshka.Data.dll
+/home/dvv2423/RiderProjects/TheVyshka/TheVyshka.Data/bin/Debug/netcoreapp3.1/TheVyshka.Data.pdb
+/home/dvv2423/RiderProjects/TheVyshka/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.csprojAssemblyReference.cache
+/home/dvv2423/RiderProjects/TheVyshka/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.AssemblyInfoInputs.cache
+/home/dvv2423/RiderProjects/TheVyshka/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.AssemblyInfo.cs
+/home/dvv2423/RiderProjects/TheVyshka/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.dll
+/home/dvv2423/RiderProjects/TheVyshka/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.pdb
+C:\Users\dvv27\Desktop\TheVyshka\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.deps.json
+C:\Users\dvv27\Desktop\TheVyshka\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.dll
+C:\Users\dvv27\Desktop\TheVyshka\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.pdb
+C:\Users\dvv27\Desktop\TheVyshka\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.csprojAssemblyReference.cache
+C:\Users\dvv27\Desktop\TheVyshka\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.AssemblyInfoInputs.cache
+C:\Users\dvv27\Desktop\TheVyshka\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.AssemblyInfo.cs
+C:\Users\dvv27\Desktop\TheVyshka\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.dll
+C:\Users\dvv27\Desktop\TheVyshka\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.pdb
