@@ -7,12 +7,12 @@ namespace TheVyshka.Data.Repositories
 {
     public interface ITagRepository
     {
-        Task<List<TagsDto>> GetAllAsync();
-        Task<TagsDto> GetByIdAsync(Guid id);
-        Task<TagsDto> CreateAsync(TagsDto item);
-        Task<bool> AddToPostAsync(Guid postId, Guid tagId);
-        Task<bool> DeleteFromPostAsync(Guid postId, Guid tagId);
-        Task<bool> UpdateAsync(TagsDto item);
-        Task<bool> DeleteAsync(Guid id);
+        Task<List<TagDto>> GetAllAsync();
+        Task<TagDto> GetByIdAsync(int id);
+        Task<TagDto> CreateAsync(TagDto item);
+        Task<bool> AddToPostAsync(int postId, int tagId);
+        Task<bool> DeleteFromPostAsync(int postId, int tagId);
+        Task<bool> UpdateAsync(TagDto item);
+        Task<bool> DeleteAsync(int id);
     }
 }

@@ -4,8 +4,8 @@
     <e p="C:\Users\dvv27\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\dvv27\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\dvv27\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\dvv27\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TheVyshka.-545946608.00" t="ExcludeRecursive" />
-    <e p="C:\Users\dvv27\Desktop\TheVyshka" t="IncludeFlat">
+    <e p="C:\Users\dvv27\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TheVyshka.-582443041.00" t="ExcludeRecursive" />
+    <e p="C:\Users\dvv27\Desktop\Проекты\TheVyshka" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="TheVyshka" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
@@ -22,6 +22,23 @@
           <e p="PostController.cs" t="Include" />
           <e p="TagController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20200315135125_init.cs" t="Include" />
+          <e p="20200315135125_init.Designer.cs" t="Include" />
+          <e p="20200315135550_init1.cs" t="Include" />
+          <e p="20200315135550_init1.Designer.cs" t="Include" />
+          <e p="20200315185143_addCategory.cs" t="Include" />
+          <e p="20200315185143_addCategory.Designer.cs" t="Include" />
+          <e p="20200315190146_addWpId_to_Post.cs" t="Include" />
+          <e p="20200315190146_addWpId_to_Post.Designer.cs" t="Include" />
+          <e p="20200315190701_delete_rubric.cs" t="Include" />
+          <e p="20200315190701_delete_rubric.Designer.cs" t="Include" />
+          <e p="20200316115727_add_categories_into_context.cs" t="Include" />
+          <e p="20200316115727_add_categories_into_context.Designer.cs" t="Include" />
+          <e p="20200316155221_PostCollaborator_PK_Role.cs" t="Include" />
+          <e p="20200316155221_PostCollaborator_PK_Role.Designer.cs" t="Include" />
+          <e p="TheVyshkaContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="mono_crash.mem.11728.1.blob" t="Include" />
         <e p="mono_crash.mem.20087.1.blob" t="Include" />
@@ -93,17 +110,18 @@
         <e p="Dto" t="Include">
           <e p="CollaboratorDto.cs" t="Include" />
           <e p="PostDto.cs" t="Include" />
-          <e p="PostPreviewDto.cs" t="Include" />
-          <e p="TagsDto.cs" t="Include" />
+          <e p="TagDto.cs" t="Include" />
           <e p="UserDto.cs" t="Include" />
         </e>
         <e p="Entities" t="Include">
+          <e p="Category.cs" t="Include" />
           <e p="Collaborator.cs" t="Include" />
           <e p="Post.cs" t="Include" />
+          <e p="PostCategory.cs" t="Include" />
           <e p="PostCollaborator.cs" t="Include" />
           <e p="PostPreview.cs" t="Include" />
           <e p="PostTag.cs" t="Include" />
-          <e p="Tags.cs" t="Include" />
+          <e p="Tag.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

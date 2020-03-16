@@ -8,11 +8,11 @@ namespace TheVyshka.Data.Repositories
     public interface ICollaboratorRepository
     {
         Task<List<CollaboratorDto>> GetAllAsync();
-        Task<CollaboratorDto> GetByIdAsync(Guid id);
+        Task<CollaboratorDto> GetByIdAsync(int id);
         Task<CollaboratorDto> CreateAsync(CollaboratorDto item);
-        Task<bool> AddToPostAsync(Guid postId, Guid collaboratorId);
-        Task<bool> DeleteFromPostAsync(Guid postId, Guid collaboratorId);
+        Task<bool> AddToPostAsync(int postId, int collaboratorId);
+        Task<bool> DeleteFromPostAsync(int postId, int collaboratorId);
         Task<bool> UpdateAsync(CollaboratorDto item);
-        Task<bool> DeleteAsync(Guid id);
+        Task<bool> DeleteAsync(int id);
     }
 }

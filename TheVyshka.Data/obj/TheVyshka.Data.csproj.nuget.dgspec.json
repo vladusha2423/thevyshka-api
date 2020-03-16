@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {}
+    "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
+    "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj",
+        "projectUniqueName": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj",
         "projectName": "TheVyshka.Data",
-        "projectPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj",
+        "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj",
         "packagesPath": "C:\\Users\\dvv27\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Data\\obj\\",
+        "outputPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dvv27\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -39,6 +39,14 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             }
           },
           "imports": [

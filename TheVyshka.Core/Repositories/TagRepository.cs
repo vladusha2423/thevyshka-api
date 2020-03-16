@@ -20,45 +20,29 @@ namespace TheVyshka.Core.Repositories
             _context = context;
         }
         
-        public async Task<List<TagsDto>> GetAllAsync()
+        public async Task<List<TagDto>> GetAllAsync()
         {
             var tags = TagConverter.Convert(
-                await _context.Tags.ToListAsync());
+                await _context.Tags
+                    .Include(t => t.PostTag)
+                    .ThenInclude(pt => pt.Post)
+                    .OrderByDescending(p => p.Id)
+                    .ToListAsync());
             
-            foreach (var t in tags)
-            {
-                var posts = new List<PostDto>();
-                var postTags = _context.PostTags.
-                    Where(p => p.TagId == t.Id).ToList();
-                foreach (var p in postTags)
-                {
-                    posts.Add(PostConverter.Convert(await _context.Posts.
-                        FirstOrDefaultAsync(u => u.Id == p.PostId)));
-                }
-                t.Posts = posts;
-            }
             
             return tags;
         }
 
-        public async Task<TagsDto> GetByIdAsync(Guid id)
+        public async Task<TagDto> GetByIdAsync(int id)
         {
-            var tag = TagConverter.Convert(
-                await _context.Tags.FindAsync(id));
-            
-            var posts = new List<PostDto>();
-            var postTags = _context.PostTags.Where(p => p.TagId == tag.Id).ToList();
-            foreach (var p in postTags)
-            {
-                posts.Add(PostConverter.Convert(await _context.Posts.
-                    FirstOrDefaultAsync(u => u.Id == p.PostId)));
-            }
-            tag.Posts = posts;
-            
-            return tag;
+            return TagConverter.Convert(
+                await _context.Tags
+                    .Include(t => t.PostTag)
+                    .ThenInclude(pt => pt.Post)
+                    .FirstOrDefaultAsync(t => t.Id == id));
         }
 
-        public async Task<TagsDto> CreateAsync(TagsDto item)
+        public async Task<TagDto> CreateAsync(TagDto item)
         {
             var tag = _context.Tags.Add(
                 TagConverter.Convert(item));
@@ -66,7 +50,7 @@ namespace TheVyshka.Core.Repositories
             return TagConverter.Convert(tag.Entity);
         }
 
-        public async Task<bool> AddToPostAsync(Guid postId, Guid tagId)
+        public async Task<bool> AddToPostAsync(int postId, int tagId)
         {
             await _context.PostTags.AddAsync(new PostTag
             {
@@ -77,7 +61,7 @@ namespace TheVyshka.Core.Repositories
             return true;
         } 
         
-        public async Task<bool> DeleteFromPostAsync(Guid postId, Guid tagId)
+        public async Task<bool> DeleteFromPostAsync(int postId, int tagId)
         {
             var postTag = await _context.PostTags.
                 FirstOrDefaultAsync(p => (p.PostId == postId && p.TagId == tagId));
@@ -86,7 +70,7 @@ namespace TheVyshka.Core.Repositories
             return true;
         } 
 
-        public async Task<bool> UpdateAsync(TagsDto item)
+        public async Task<bool> UpdateAsync(TagDto item)
         {
             if (item == null)
                 return false;
@@ -95,7 +79,7 @@ namespace TheVyshka.Core.Repositories
             return true;
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(int id)
         {
             var tag = await _context
                 .Tags
@@ -103,13 +87,7 @@ namespace TheVyshka.Core.Repositories
             if (tag == null)
                 return false;
             _context.Tags.Remove(tag);
-            foreach (var postTag in _context.PostTags)
-            {
-                if (postTag.TagId == tag.Id)
-                {
-                    _context.Remove(postTag);
-                }
-            }
+            
             await _context.SaveChangesAsync();
             return true;
         }

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
+    "projectUniqueName": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
     "projectName": "TheVyshka.Auth",
-    "projectPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
-    "outputPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Auth\\obj\\",
+    "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
+    "outputPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -15,11 +15,11 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj": {
-            "projectPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj"
+          "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj": {
+            "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj"
           },
-          "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
-            "projectPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj"
+          "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
+            "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj"
           }
         }
       }
@@ -37,9 +37,17 @@
           "target": "Package",
           "version": "[2.2.0, )"
         },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.2, )"
+        },
         "Microsoft.EntityFrameworkCore.SqlServer": {
           "target": "Package",
           "version": "[3.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools": {
+          "target": "Package",
+          "version": "[3.1.2, )"
         },
         "System.IdentityModel.Tokens.Jwt": {
           "target": "Package",

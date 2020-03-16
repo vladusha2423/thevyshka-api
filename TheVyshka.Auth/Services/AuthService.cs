@@ -47,7 +47,7 @@ namespace TheVyshka.Auth.Services
             if (result.Succeeded)
             {
                 await _signInManager.SignInAsync(user, false);
-                await _userManager.AddToRoleAsync(user, "user");
+                await _userManager.AddToRoleAsync(user, "admin");
                 return await _jwt.GenerateJwt(user);
             }
 

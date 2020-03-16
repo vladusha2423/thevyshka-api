@@ -1,7 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c51bcc91-a23d-4a31-8b76-dc516c558d4e" name="Default Changelist" comment="" />
+    <list default="true" id="c51bcc91-a23d-4a31-8b76-dc516c558d4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TheVyshka.Data/Entities/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheVyshka.Data/Entities/PostCategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/thevyshka.X7eMEQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/thevyshka.X7eMEQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/thevyshka.X7eMEQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/thevyshka.X7eMEQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/thevyshka.X7eMEQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/1dbb109a-5426-4d09-b8bd-1662758ceab3/storage_v2/_src_/database/thevyshka.X7eMEQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/e419b0d0-f46b-4dd6-bc48-8d1cecbedf0a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/e419b0d0-f46b-4dd6-bc48-8d1cecbedf0a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/e419b0d0-f46b-4dd6-bc48-8d1cecbedf0a/storage_v2/_src_/database/TheVyshkaDB.HXCASA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/e419b0d0-f46b-4dd6-bc48-8d1cecbedf0a/storage_v2/_src_/database/TheVyshkaDB.HXCASA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/e419b0d0-f46b-4dd6-bc48-8d1cecbedf0a/storage_v2/_src_/database/TheVyshkaDB.HXCASA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/dataSources/e419b0d0-f46b-4dd6-bc48-8d1cecbedf0a/storage_v2/_src_/database/TheVyshkaDB.HXCASA/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheVyshka/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/TheVyshka.Auth.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/TheVyshka.Auth.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Auth.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Auth.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Auth.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Auth.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Auth.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Auth.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/bin/Debug/netcoreapp3.1/TheVyshka.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/TheVyshka.Auth.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/TheVyshka.Auth.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/TheVyshka.Auth.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/TheVyshka.Auth.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/TheVyshka.Auth.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/TheVyshka.Auth.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Auth/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Auth/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/EF/TheVyshkaContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/EF/TheVyshkaContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/Repositories/CollaboratorRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/Repositories/CollaboratorRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/Repositories/PostRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/Repositories/PostRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/Repositories/TagRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/Repositories/TagRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/TheVyshka.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/TheVyshka.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Core.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Core.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/bin/Debug/netcoreapp3.1/TheVyshka.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/Debug/netcoreapp3.1/TheVyshka.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/TheVyshka.Core.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/TheVyshka.Core.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/TheVyshka.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/TheVyshka.Core.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/TheVyshka.Core.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/TheVyshka.Core.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Core/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Converters/CollaboratorConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Converters/CollaboratorConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Converters/PostConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Converters/PostConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Converters/TagConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Converters/TagConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Dto/CollaboratorDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Dto/CollaboratorDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Dto/PostDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Dto/PostDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Dto/PostPreviewDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Dto/TagsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Dto/TagDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Entities/Collaborator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Entities/Collaborator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Entities/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Entities/Post.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Entities/PostCollaborator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Entities/PostCollaborator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Entities/PostPreview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Entities/PostPreview.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Entities/PostTag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Entities/PostTag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Entities/Tags.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Entities/Tag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Repositories/ICollaboratorRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Repositories/ICollaboratorRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Repositories/IPostRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Repositories/IPostRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/Repositories/ITagRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/Repositories/ITagRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/TheVyshka.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/TheVyshka.Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/bin/Debug/netcoreapp3.1/TheVyshka.Data.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/bin/Debug/netcoreapp3.1/TheVyshka.Data.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/bin/Debug/netcoreapp3.1/TheVyshka.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/bin/Debug/netcoreapp3.1/TheVyshka.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/bin/Debug/netcoreapp3.1/TheVyshka.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/bin/Debug/netcoreapp3.1/TheVyshka.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/Debug/netcoreapp3.1/TheVyshka.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/TheVyshka.Data.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/TheVyshka.Data.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/TheVyshka.Data.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/TheVyshka.Data.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/TheVyshka.Data.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/TheVyshka.Data.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.Data/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.Data/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/Controllers/AuthConroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/Controllers/AuthConroller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/Controllers/CollaboratorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/Controllers/CollaboratorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/Controllers/PostController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/Controllers/PostController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/Controllers/TagController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/Controllers/TagController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/TheVyshka.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/TheVyshka.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Auth.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Auth.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Auth.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Auth.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/TheVyshka.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/Debug/netcoreapp3.1/TheVyshka.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/TheVyshka.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/TheVyshka.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/TheVyshka.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/TheVyshka.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/TheVyshka.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/TheVyshka.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/TheVyshka.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/TheVyshka.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TheVyshka/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TheVyshka/obj/project.packagespec.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,71 +166,91 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="TheVyshkaDB: database" type="162271b6:PgImplModel$Database" />
+        <item name="TheVyshkaDB2: database" type="162271b6:PgImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="TheVyshkaDB: database" type="162271b6:PgImplModel$Database" />
+        <item name="TheVyshkaDB2: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="TheVyshkaDB: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="TheVyshkaDB: database" type="162271b6:PgImplModel$Database" />
+        <item name="TheVyshkaDB2: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="TheVyshkaDB: database" type="162271b6:PgImplModel$Database" />
+        <item name="TheVyshkaDB2: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="AspNetUsers: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
     </expand>
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Configurations/ConfigureConnection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Configurations/ConfigureServices.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka.Core/Repositories/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Configurations/ConfigureJwt.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/AuthConroller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/ViewModel/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/TagController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/CollaboratorController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/PostController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TheVyshka.Core/Repositories/PostRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka.Core/Repositories/CollaboratorRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka.Core/EF/TheVyshkaContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TheVyshka.Core/Repositories/TagRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka.Auth/Services/AuthService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Core/Repositories/CollaboratorRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Core/Repositories/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Entities/Category.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Entities/PostCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Core/EF/TheVyshkaContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TheVyshka.Auth/Interfaces/IJwtGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TheVyshka.Auth/Services/JwtGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TheVyshka.Auth/Interfaces/IAuthService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Converters/UserConverter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Repositories/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Auth/Services/AuthService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TheVyshka.Auth/obj/Debug/netcoreapp3.1/TheVyshka.Auth.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/14E/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F2ACE85F-6C10-49DB-8CAC-F03079CCDA72/24/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Configurations/ConfigureConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Configurations/ConfigureServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Configurations/ConfigureJwt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/PostController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/CollaboratorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/2AC/MethodBase.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/TagController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/30/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/AuthConroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/ViewModel/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/599D604F-15E5-480D-A308-4B55900AD154/8/Queryable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Repositories/IPostRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Repositories/ITagRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/657B2BF7-95E5-4570-A29C-F9556A5277CB/2F/ParameterExpression.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Repositories/ICollaboratorRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Converters/PostConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Repositories/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Converters/CollaboratorConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Converters/UserConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Entities/Collaborator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Converters/TagConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Entities/Post.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Entities/Tag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Entities/PostTag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Entities/PostCollaborator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Entities/PostPreview.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Migrations/20200315135550_init1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Migrations/TheVyshkaContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Migrations/20200315135125_init.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Dto/PostDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Dto/UserDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Dto/TagDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka.Data/Dto/CollaboratorDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TheVyshka/Migrations/20200315190146_addWpId_to_Post.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -104,26 +258,45 @@
         <option value="$PROJECT_DIR$/TheVyshka.Data/Class1.cs" />
         <option value="$PROJECT_DIR$/TheVyshka.Core/Class1.cs" />
         <option value="$PROJECT_DIR$/TheVyshka.Auth/Class1.cs" />
-        <option value="$PROJECT_DIR$/TheVyshka.Data/Dto/UserDto.cs" />
         <option value="$PROJECT_DIR$/TheVyshka/Program.cs" />
         <option value="$PROJECT_DIR$/TheVyshka/Startup.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/TheVyshka.Core/EF/MyContext.cs" />
-        <option value="$PROJECT_DIR$/TheVyshka.Core/EF/TheVyshkaContext.cs" />
         <option value="$PROJECT_DIR$/TheVyshka/Configurations/ConfigureServices.cs" />
         <option value="$PROJECT_DIR$/TheVyshka/Configurations/ConfigureConnection.cs" />
-        <option value="$PROJECT_DIR$/TheVyshka/appsettings.json" />
-        <option value="$PROJECT_DIR$/TheVyshka.Core/Repositories/PostRepository.cs" />
-        <option value="$PROJECT_DIR$/TheVyshka.Auth/Services/AuthService.cs" />
         <option value="$PROJECT_DIR$/TheVyshka.Data/Repositories/IUserRepository.cs" />
-        <option value="$PROJECT_DIR$/TheVyshka/Controllers/UserController.cs" />
-        <option value="$PROJECT_DIR$/TheVyshka/Controllers/AuthConroller.cs" />
-        <option value="$PROJECT_DIR$/TheVyshka/Controllers/PostController.cs" />
         <option value="$PROJECT_DIR$/TheVyshka/Controllers/ValuesController.cs" />
         <option value="$PROJECT_DIR$/TheVyshka.Core/Repositories/UserRepository.cs" />
-        <option value="$PROJECT_DIR$/TheVyshka.Core/Repositories/CollaboratorRepository.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Entities/PostTag.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Entities/Tag.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Entities/PostPreview.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Entities/PostCollaborator.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Entities/Collaborator.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Dto/TagDto.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Dto/CollaboratorDto.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Entities/User.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Dto/UserDto.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Repositories/ITagRepository.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Repositories/ICollaboratorRepository.cs" />
         <option value="$PROJECT_DIR$/TheVyshka/Controllers/CollaboratorController.cs" />
         <option value="$PROJECT_DIR$/TheVyshka/Controllers/TagController.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka/Controllers/UserController.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Auth/Services/AuthService.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka/Controllers/AuthConroller.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka/appsettings.json" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Converters/TagConverter.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Converters/CollaboratorConverter.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Entities/Category.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Entities/PostCategory.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Entities/Post.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Repositories/IPostRepository.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka/Controllers/PostController.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Core/Repositories/TagRepository.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Core/Repositories/CollaboratorRepository.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Core/Repositories/PostRepository.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Dto/PostDto.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Data/Converters/PostConverter.cs" />
+        <option value="$PROJECT_DIR$/TheVyshka.Core/EF/TheVyshkaContext.cs" />
       </list>
     </option>
   </component>
@@ -137,7 +310,7 @@
     <property name="DatabaseDriversLRU" value="sqlserver&#10;postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="RiderUnitTestingPageId" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.TheVyshka">
     <configuration name="TheVyshka" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -217,135 +390,158 @@
       <workItem from="1581868251475" duration="1763000" />
       <workItem from="1581870299485" duration="7081000" />
       <workItem from="1583504343124" duration="9923000" />
+      <workItem from="1583916448912" duration="455000" />
+      <workItem from="1584196586821" duration="14560000" />
+      <workItem from="1584277979212" duration="934000" />
+      <workItem from="1584279403674" duration="12860000" />
+      <workItem from="1584359658174" duration="4983000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="435" y="149" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583506872562">
+    <state x="435" y="149" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584280068561">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="435" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1583506872562" />
+    <state x="435" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1584280068561" />
     <state x="581" y="215" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/52.27.1868.1053@52.27.1868.1053" timestamp="1581870984666" />
-    <state width="402" height="466" key="DebuggerActiveHint" timestamp="1583512807971">
+    <state width="439" height="466" key="DebuggerActiveHint" timestamp="1584294164027">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="402" height="466" key="DebuggerActiveHint/0.0.1536.834@0.0.1536.834" timestamp="1583512807971" />
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1583514620227">
+    <state width="439" height="466" key="DebuggerActiveHint/0.0.1536.834@0.0.1536.834" timestamp="1584294164027" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1584375198050">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583514620227" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1584375198050" />
     <state width="1822" height="315" key="GridCell.Tab.0.bottom/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401889" />
-    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1583514620227">
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1584375198050">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1583514620227" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1584375198050" />
     <state width="1822" height="315" key="GridCell.Tab.0.center/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401888" />
-    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1583514620227">
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1584375198050">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1583514620227" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1584375198050" />
     <state width="1822" height="315" key="GridCell.Tab.0.left/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401888" />
-    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1583514620227">
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1584375198050">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1583514620227" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1584375198050" />
     <state width="1822" height="315" key="GridCell.Tab.0.right/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401888" />
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1584307464570">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1584307464570" />
     <state width="1822" height="315" key="GridCell.Tab.1.bottom/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401891" />
-    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1584307464570">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1584307464570" />
     <state width="1822" height="315" key="GridCell.Tab.1.center/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401890" />
-    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1584307464570">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1584307464570" />
     <state width="1822" height="315" key="GridCell.Tab.1.left/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401889" />
-    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1584307464570">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1584307464570" />
     <state width="1822" height="315" key="GridCell.Tab.1.right/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401891" />
-    <state width="1493" height="265" key="GridCell.Tab.2.bottom" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.2.bottom" timestamp="1584307464571">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1584307464571" />
     <state width="1822" height="315" key="GridCell.Tab.2.bottom/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401892" />
-    <state width="1493" height="265" key="GridCell.Tab.2.center" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.2.center" timestamp="1584307464570">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1584307464570" />
     <state width="1822" height="315" key="GridCell.Tab.2.center/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401891" />
-    <state width="1493" height="265" key="GridCell.Tab.2.left" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.2.left" timestamp="1584307464570">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1584307464570" />
     <state width="1822" height="315" key="GridCell.Tab.2.left/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401891" />
-    <state width="1493" height="265" key="GridCell.Tab.2.right" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.2.right" timestamp="1584307464571">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1584307464571" />
     <state width="1822" height="315" key="GridCell.Tab.2.right/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401891" />
-    <state width="1493" height="265" key="GridCell.Tab.3.bottom" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.3.bottom" timestamp="1584307464572">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1584307464572" />
     <state width="1822" height="315" key="GridCell.Tab.3.bottom/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401892" />
-    <state width="1493" height="265" key="GridCell.Tab.3.center" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.3.center" timestamp="1584307464571">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1584307464571" />
     <state width="1822" height="315" key="GridCell.Tab.3.center/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401892" />
-    <state width="1493" height="265" key="GridCell.Tab.3.left" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.3.left" timestamp="1584307464571">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1584307464571" />
     <state width="1822" height="315" key="GridCell.Tab.3.left/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401892" />
-    <state width="1493" height="265" key="GridCell.Tab.3.right" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.3.right" timestamp="1584307464571">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1584307464571" />
     <state width="1822" height="315" key="GridCell.Tab.3.right/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401892" />
-    <state width="1493" height="265" key="GridCell.Tab.4.bottom" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.4.bottom" timestamp="1584307464572">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.4.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.4.bottom/0.0.1536.834@0.0.1536.834" timestamp="1584307464572" />
     <state width="1822" height="315" key="GridCell.Tab.4.bottom/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401893" />
-    <state width="1493" height="265" key="GridCell.Tab.4.center" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.4.center" timestamp="1584307464572">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.4.center/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.4.center/0.0.1536.834@0.0.1536.834" timestamp="1584307464572" />
     <state width="1822" height="315" key="GridCell.Tab.4.center/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401893" />
-    <state width="1493" height="265" key="GridCell.Tab.4.left" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.4.left" timestamp="1584307464572">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.4.left/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.4.left/0.0.1536.834@0.0.1536.834" timestamp="1584307464572" />
     <state width="1822" height="315" key="GridCell.Tab.4.left/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401893" />
-    <state width="1493" height="265" key="GridCell.Tab.4.right" timestamp="1583514620228">
+    <state width="1493" height="265" key="GridCell.Tab.4.right" timestamp="1584307464572">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.4.right/0.0.1536.834@0.0.1536.834" timestamp="1583514620228" />
+    <state width="1493" height="265" key="GridCell.Tab.4.right/0.0.1536.834@0.0.1536.834" timestamp="1584307464572" />
     <state width="1822" height="315" key="GridCell.Tab.4.right/52.27.1868.1053@52.27.1868.1053" timestamp="1581878401893" />
-    <state width="217" height="429" key="HiddenNamespacesPopup" timestamp="1583507836626">
+    <state width="217" height="429" key="HiddenNamespacesPopup" timestamp="1584280585754">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="217" height="429" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1583507836626" />
+    <state width="217" height="429" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1584280585754" />
     <state width="263" height="541" key="HiddenNamespacesPopup/52.27.1868.1053@52.27.1868.1053" timestamp="1581874716141" />
-    <state x="435" y="207" width="714" height="433" key="Rider.ProjectTemplateDialog.Size" timestamp="1583506537705">
+    <state x="435" y="207" width="714" height="433" key="Rider.ProjectTemplateDialog.Size" timestamp="1584297874926">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="435" y="207" width="714" height="433" key="Rider.ProjectTemplateDialog.Size/0.0.1536.834@0.0.1536.834" timestamp="1583506537705" />
+    <state x="435" y="207" width="714" height="433" key="Rider.ProjectTemplateDialog.Size/0.0.1536.834@0.0.1536.834" timestamp="1584297874926" />
     <state x="581" y="288" width="800" height="536" key="Rider.ProjectTemplateDialog.Size/52.27.1868.1053@52.27.1868.1053" timestamp="1581868385232" />
-    <state x="475" y="188" width="1022" height="736" key="SettingsEditor" timestamp="1581868467324">
-      <screen x="52" y="27" width="1868" height="1053" />
+    <state x="541" y="108" key="RiderGenerateDialog" timestamp="1584274179952">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="541" y="108" key="RiderGenerateDialog/0.0.1536.834@0.0.1536.834" timestamp="1584274179952" />
+    <state x="348" y="127" width="914" height="707" key="SettingsEditor" timestamp="1584278912690">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="348" y="127" width="914" height="707" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1584278912690" />
     <state x="475" y="188" width="1022" height="736" key="SettingsEditor/52.27.1868.1053@52.27.1868.1053" timestamp="1581868467324" />
     <state x="719" y="361" width="524" height="390" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1581875802754">
       <screen x="52" y="27" width="1868" height="1053" />
@@ -360,24 +556,9 @@
     </state>
     <state x="404" y="38" width="738" height="758" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1583507297128" />
     <state x="544" y="75" width="884" height="957" key="find.popup/52.27.1868.1053@52.27.1868.1053" timestamp="1581872397294" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/TheVyshka/Controllers/UserController.cs</url>
-          <line>56</line>
-          <properties documentPath="$PROJECT_DIR$/TheVyshka/Controllers/UserController.cs" initialLine="56">
-            <startOffsets>
-              <option value="1442" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1710" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1584280100594">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1584280100594" />
   </component>
 </project>

@@ -9,11 +9,11 @@ namespace TheVyshka.Data.Converters
     {
         public static Collaborator Convert(CollaboratorDto collaborator)
         {
-            
             return new Collaborator
             {
                 Id = collaborator.Id,
                 Name = collaborator.Name,
+                Role = collaborator.Role,
                 Date = collaborator.Date,
                 Description = collaborator.Description,
                 Links = collaborator.Links
@@ -22,14 +22,27 @@ namespace TheVyshka.Data.Converters
 
         public static CollaboratorDto Convert(Collaborator collaborator)
         {
+            var posts = new List<PostDto>();
+            if (collaborator.PostCollaborator != null)
+            {
+                foreach (var pc in collaborator.PostCollaborator)
+                {
+                    pc.Post.PostTag = null;
+                    pc.Post.PostCollaborator = null;
+                    posts.Add(PostConverter.Convert(pc.Post));
+                }
+            }
             
+
             return new CollaboratorDto
             {
                 Id = collaborator.Id,
                 Name = collaborator.Name,
                 Date = collaborator.Date,
+                Role = collaborator.Role,
                 Description = collaborator.Description,
-                Links = collaborator.Links
+                Links = collaborator.Links,
+                Posts = posts
             };
         }
 

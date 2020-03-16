@@ -56,7 +56,8 @@ namespace TheVyshka.Controllers
         {
             try
             {
-                if (!_repo.AddToRoleAsync(id, role).Result)
+                var result = await _repo.AddToRoleAsync(id, role);
+                if (!result)
                     return NotFound();
                 return Ok(true);
             }

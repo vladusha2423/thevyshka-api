@@ -31,7 +31,7 @@ namespace TheVyshka.Controllers
         }
         
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(Guid id)
+        public async Task<IActionResult> Get(int id)
         {
             try
             {
@@ -59,7 +59,7 @@ namespace TheVyshka.Controllers
         
         [Authorize]
         [HttpPost("add/{postId}/{collaboratorId}")]
-        public async Task<IActionResult> Post(Guid postId, Guid collaboratorId)
+        public async Task<IActionResult> Post(int postId, int collaboratorId)
         {
             try
             {
@@ -73,7 +73,7 @@ namespace TheVyshka.Controllers
         
         [Authorize]
         [HttpDelete("remove/{postId}/{collaboratorId}")]
-        public async Task<IActionResult> Delete(Guid postId, Guid collaboratorId)
+        public async Task<IActionResult> Delete(int postId, int collaboratorId)
         {
             try
             {
@@ -101,7 +101,7 @@ namespace TheVyshka.Controllers
         
         [Authorize]
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {

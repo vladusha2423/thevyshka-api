@@ -4,8 +4,10 @@ namespace TheVyshka.Data.Entities
 {
     public class PostCollaborator
     {
-        public Guid CollaboratorId { get; set; }
-        public Guid PostId { get; set; }
+        public int CollaboratorId { get; set; }
+        public Collaborator Collaborator { get; set; }
+        public int PostId { get; set; }
+        public Post Post { get; set; }
         public string Role { get; set; }
     }
 }

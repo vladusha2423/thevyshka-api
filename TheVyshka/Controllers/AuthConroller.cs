@@ -41,6 +41,7 @@ namespace TheVyshka.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         [Produces(typeof(object))]
         public async Task<ActionResult<object>> Register([FromBody] UserDto item)
         {

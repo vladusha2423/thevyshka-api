@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka\\TheVyshka.csproj",
+    "projectUniqueName": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka\\TheVyshka.csproj",
     "projectName": "TheVyshka",
-    "projectPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka\\TheVyshka.csproj",
-    "outputPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka\\obj\\",
+    "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka\\TheVyshka.csproj",
+    "outputPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -15,14 +15,14 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj": {
-            "projectPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj"
+          "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj": {
+            "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj"
           },
-          "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj": {
-            "projectPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj"
+          "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj": {
+            "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj"
           },
-          "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
-            "projectPath": "C:\\Users\\dvv27\\Desktop\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj"
+          "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
+            "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj"
           }
         }
       }
@@ -51,6 +51,22 @@
         "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
           "target": "Package",
           "version": "[3.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.2, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "target": "Package",
+          "version": "[3.1.2, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools": {
+          "target": "Package",
+          "version": "[3.1.2, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+          "target": "Package",
+          "version": "[2.0.3, )"
         },
         "Npgsql.EntityFrameworkCore.PostgreSQL": {
           "target": "Package",

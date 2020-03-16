@@ -31,7 +31,7 @@ namespace TheVyshka.Controllers
         }
 
         [HttpGet("id/{id}")]
-        public async Task<IActionResult> Get(Guid id)
+        public async Task<IActionResult> Get(int id)
         {
             try
             {
@@ -43,12 +43,25 @@ namespace TheVyshka.Controllers
             }
         }
         
-        [HttpGet("rubric/{rubric}/{page}-{count}")]
-        public async Task<IActionResult> GetByRubric(string rubric, int page, int count)
+        // [HttpGet("rubric/{rubric}/{page}-{count}")]
+        // public async Task<IActionResult> GetByRubric(string rubric, int page, int count)
+        // {
+        //     try
+        //     {
+        //         return Ok(await _repository.GetByRubricAsync(rubric, page, count));
+        //     }
+        //     catch(Exception ex)
+        //     {
+        //         return StatusCode(500, ex);
+        //     }
+        // }
+        
+        [HttpGet("collab/{collabId}/{page}-{count}")]
+        public async Task<IActionResult> GetByCollaborator(int collabId, int page, int count)
         {
             try
             {
-                return Ok(await _repository.GetByRubricAsync(rubric, page, count));
+                return Ok(await _repository.GetByCollaboratorAsync(collabId, page, count));
             }
             catch(Exception ex)
             {
@@ -56,25 +69,12 @@ namespace TheVyshka.Controllers
             }
         }
         
-        [HttpGet("collab/{collaboratorName}/{page}-{count}")]
-        public async Task<IActionResult> GetByCollaborator(string collaboratorName, int page, int count)
+        [HttpGet("tag/{tagId}/{page}-{count}")]
+        public async Task<IActionResult> GetByTag(int tagId, int page, int count)
         {
             try
             {
-                return Ok(await _repository.GetByCollaboratorAsync(collaboratorName, page, count));
-            }
-            catch(Exception ex)
-            {
-                return StatusCode(500, ex);
-            }
-        }
-        
-        [HttpGet("tag/{tagName}/{page}-{count}")]
-        public async Task<IActionResult> GetByTag(string tagName, int page, int count)
-        {
-            try
-            {
-                return Ok(await _repository.GetByTagAsync(tagName, page, count));
+                return Ok(await _repository.GetByTagAsync(tagId, page, count));
             }
             catch(Exception ex)
             {
@@ -125,7 +125,7 @@ namespace TheVyshka.Controllers
         
         [Authorize]
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {
