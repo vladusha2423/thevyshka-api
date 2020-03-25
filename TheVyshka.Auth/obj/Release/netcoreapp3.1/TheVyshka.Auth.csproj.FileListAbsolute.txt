@@ -1,0 +1,15 @@
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\bin\Release\netcoreapp3.1\TheVyshka.Auth.deps.json
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\bin\Release\netcoreapp3.1\TheVyshka.Auth.runtimeconfig.json
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\bin\Release\netcoreapp3.1\TheVyshka.Auth.runtimeconfig.dev.json
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\bin\Release\netcoreapp3.1\TheVyshka.Auth.dll
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\bin\Release\netcoreapp3.1\TheVyshka.Auth.pdb
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\bin\Release\netcoreapp3.1\TheVyshka.Core.dll
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\bin\Release\netcoreapp3.1\TheVyshka.Data.dll
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\bin\Release\netcoreapp3.1\TheVyshka.Core.pdb
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\bin\Release\netcoreapp3.1\TheVyshka.Data.pdb
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\obj\Release\netcoreapp3.1\TheVyshka.Auth.csprojAssemblyReference.cache
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\obj\Release\netcoreapp3.1\TheVyshka.Auth.AssemblyInfoInputs.cache
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\obj\Release\netcoreapp3.1\TheVyshka.Auth.AssemblyInfo.cs
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\obj\Release\netcoreapp3.1\TheVyshka.Auth.csproj.CopyComplete
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\obj\Release\netcoreapp3.1\TheVyshka.Auth.dll
+C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Auth\obj\Release\netcoreapp3.1\TheVyshka.Auth.pdb

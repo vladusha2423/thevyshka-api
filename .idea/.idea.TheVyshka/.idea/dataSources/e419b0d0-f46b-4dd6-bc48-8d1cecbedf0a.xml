@@ -21,11 +21,11 @@ sequence|table|32899|32901|1
       <ObjectId>49208</ObjectId>
       <Owner>postgres</Owner>
       <IntrospectionStateNumber>724</IntrospectionStateNumber>
-      <Relations>sequence|table|49251|49253|1
+      <Relations>sequence|table|49225|49227|1
+sequence|table|49241|49243|1
+sequence|table|49251|49253|1
 sequence|table|49261|49263|1
 sequence|table|49276|49278|1
-sequence|table|49225|49227|1
-sequence|table|49241|49243|1
 </Relations>
     </database>
     <database id="5" parent="1" name="TheVyshkaDB2">
