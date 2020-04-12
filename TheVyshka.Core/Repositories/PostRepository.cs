@@ -1,10 +1,12 @@
 ﻿﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+ using System.IO;
+ using System.Linq;
+ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using TheVyshka.Core.EF;
-using TheVyshka.Data.Converters;
+ using Newtonsoft.Json;
+ using TheVyshka.Core.EF;
+ using TheVyshka.Data.Converters;
 using TheVyshka.Data.Dto;
 using TheVyshka.Data.Entities;
 using TheVyshka.Data.Repositories;
@@ -20,19 +22,36 @@ namespace TheVyshka.Core.Repositories
             _context = context;
         }
         
-        public async Task<List<PostDto>> GetAllAsync(int page, int count)
+        public async Task<PostList> GetAllAsync(string selection, int page, int count)
         {
-            // var posts = PostConverter.Convert(
-            //     await _context.Posts
-            //         .Skip(count * (page - 1))
-            //         .Take(count)
-            //         .Include(p => p.PostTag)
-            //         .ThenInclude(pt => pt.Tag)
-            //         .Include(p => p.PostCollaborator)
-            //         .ThenInclude(pc => pc.Collaborator)
-            //         .ToListAsync());
-            var posts = await _context.Posts
-                    .Skip(_context.Posts.Count() - count * page)
+            var postCount = _context.Posts.Count();
+            if (selection == "all")
+            {
+                var posts = await _context.Posts
+                    .Skip(postCount - count * page)
+                    .Take(count)
+                    // .Include(p => p.PostTag)
+                    // .ThenInclude(pt => pt.Tag)
+                    // .Include(p => p.PostCollaborator)
+                    // .ThenInclude(pc => pc.Collaborator)
+                    // .Include(p => p.PostCategory)
+                    // .ThenInclude(pc => pc.Category)
+                    // .OrderByDescending(p => p.Id)
+                    .OrderBy(p => p.Id)
+                    .ToListAsync();
+
+                return new PostList
+                {
+                    Posts = PostConverter.Convert(posts),
+                    Count = postCount
+                };
+            }
+            else
+            {
+                var posts = await (from p in _context.Posts
+                        where p.Status == selection
+                        select p)
+                    .Skip(postCount - count * page)
                     .Take(count)
                     .Include(p => p.PostTag)
                     .ThenInclude(pt => pt.Tag)
@@ -42,7 +61,13 @@ namespace TheVyshka.Core.Repositories
                     .ThenInclude(pc => pc.Category)
                     .OrderByDescending(p => p.Id)
                     .ToListAsync();
-            return PostConverter.Convert(posts);
+
+                return new PostList
+                {
+                    Posts = PostConverter.Convert(posts),
+                    Count = postCount
+                };
+            }
         }
 
         public async Task<PostDto> GetByIdAsync(int id)
@@ -58,37 +83,127 @@ namespace TheVyshka.Core.Repositories
                     .FirstOrDefaultAsync(p => p.Id == id)
                 );
             
-            
             return post;
         }
-        
-        // public async Task<List<PostDto>> GetByRubricAsync(string rubric, int page, int count)
-        // {
-        //     var posts = PostConverter.Convert(await 
-        //         _context.Posts
-        //             .Skip(count * (page - 1))
-        //             .Take(count)
-        //             .Include(p => p.PostTag)
-        //             .ThenInclude(pt => pt.Tag)
-        //             .Include(p => p.PostCollaborator)
-        //             .ThenInclude(pc => pc.Collaborator)
-        // .Include(p => p.PostCategory)
-        //     .ThenInclude(pc => pc.Category)
-        //             .Where(p => p.Rubric == rubric)
-        //             .ToListAsync());
-        //
-        //     return posts;
+
+        // public async Task<List<PostCollaborator>> GetLinks(){
+        //     return await _context.PostCollaborators.ToListAsync();
         // }
-        
-        public async Task<List<PostDto>> GetByCollaboratorAsync(int collabId, int page, int count)
+
+        public async Task<bool> Initial()
         {
+            // string path = @"D:\Projects\TheVyshka\posts.json";
+            // using (StreamReader sr = new StreamReader(path))
+            // {
+            //     var str = sr.ReadToEnd();
+            //     var list = JsonConvert.DeserializeObject<List<Post>>(str);
+            //     foreach(var p in list)
+            //     {
+            //         p.Id = 0;
+            //     }
+            //     await _context.Posts.AddRangeAsync(list);
+            //     await _context.SaveChangesAsync();
+            // }
+            string path = @"D:\Projects\TheVyshka\tags.json";
+            using (StreamReader sr = new StreamReader(path))
+            {
+                var str = sr.ReadToEnd();
+                var list = JsonConvert.DeserializeObject<List<Tag>>(str);
+                foreach(var p in list)
+                {
+                    p.Id = 0;
+                }
+                await _context.Tags.AddRangeAsync(list);
+                await _context.SaveChangesAsync();
+            }
+            path = @"D:\Projects\TheVyshka\categories.json";
+            using (StreamReader sr = new StreamReader(path))
+            {
+                var str = sr.ReadToEnd();
+                var list = JsonConvert.DeserializeObject<List<Category>>(str);
+                foreach(var p in list)
+                {
+                    p.Id = 0;
+                }
+                await _context.Categories.AddRangeAsync(list);
+                await _context.SaveChangesAsync();
+            }
+            path = @"D:\Projects\TheVyshka\collaborators.json";
+            using (StreamReader sr = new StreamReader(path))
+            {
+                var str = sr.ReadToEnd();
+                var list = JsonConvert.DeserializeObject<List<Collaborator>>(str);
+                foreach(var p in list)
+                {
+                    p.Id = 0;
+                }
+                await _context.Collaborators.AddRangeAsync(list);
+                await _context.SaveChangesAsync();
+            }
+            path = @"D:\Projects\TheVyshka\postCollaborators.json";
+            using (StreamReader sr = new StreamReader(path))
+            {
+                var str = sr.ReadToEnd();
+                var list = JsonConvert.DeserializeObject<List<PostCollaborator>>(str);
+                await _context.PostCollaborators.AddRangeAsync(list);
+                await _context.SaveChangesAsync();
+            }
+            path = @"D:\Projects\TheVyshka\postTags.json";
+            using (StreamReader sr = new StreamReader(path))
+            {
+                var str = sr.ReadToEnd();
+                var list = JsonConvert.DeserializeObject<List<PostTag>>(str);
+                await _context.PostTags.AddRangeAsync(list);
+                await _context.SaveChangesAsync();
+            }
+            path = @"D:\Projects\TheVyshka\postCategories.json";
+            using (StreamReader sr = new StreamReader(path))
+            {
+                var str = sr.ReadToEnd();
+                var list = JsonConvert.DeserializeObject<List<PostCategory>>(str);
+                await _context.PostCategories.AddRangeAsync(list);
+                await _context.SaveChangesAsync();
+            }
+            return true;
+        }
+
+        
+        public async Task<PostList> GetByCategoryAsync(int categoryId, int page, int count)
+        {
+            var postCount = _context.Posts.Count();
+            var posts = PostConverter.Convert(await 
+                (from pq in _context.Posts
+                    join pc in _context.PostCategories on pq.Id equals pc.PostId
+                    join c in _context.Categories on pc.CategoryId equals c.Id
+                    where c.Id == categoryId
+                    select pq)
+                    .Skip(postCount - count * page)
+                    .Take(count)
+                    .Include(p => p.PostTag)
+                    .ThenInclude(pt => pt.Tag)
+                    .Include(p => p.PostCollaborator)
+                    .ThenInclude(pc => pc.Collaborator)
+                    .Include(p => p.PostCategory)
+                    .ThenInclude(pc => pc.Category)
+                    .ToListAsync());
+        
+            return new PostList
+            {
+                Posts = posts,
+                Count = postCount
+            };
+        }
+        
+        public async Task<PostList> GetByCollaboratorAsync(int collabId, int page, int count)
+        {
+            var postCount = _context.Posts.Count();
             var posts = PostConverter.Convert(
                 await (from pq in _context.Posts
                     join pc in _context.PostCollaborators on pq.Id equals pc.PostId
                     join c in _context.Collaborators on pc.CollaboratorId equals c.Id
                     where c.Id == collabId
                     select pq)
-                    .Skip(count * (page - 1))
+                    .Skip(postCount - count * page)
                     .Take(count)
                     .Include(p => p.PostTag)
                     .ThenInclude(pt => pt.Tag)
@@ -99,17 +214,21 @@ namespace TheVyshka.Core.Repositories
                     .OrderByDescending(p => p.Id)
                     .ToListAsync());
             
-            
-            return posts;
+            return new PostList
+            {
+                Posts = posts,
+                Count = postCount
+            };
         }
-        
-        public async Task<List<PostDto>> GetByNameAsync(string name, int page, int count)
+        public async Task<PostList> GetByNameAsync(string name, int page, int count)
         {
+            var postCount = _context.Posts.Count();
             var posts = PostConverter.Convert(await 
                 (from pq in _context.Posts
-                    where pq.Title == name
+                    where pq.Title.ToLower().Contains(name.ToLower())
+                    // where pq.Title.ToLower() == name.ToLower()
                     select pq)
-                .Skip(count * (page - 1))
+                .Skip(postCount - count * page)
                 .Take(count)
                 .Include(p => p.PostTag)
                 .ThenInclude(pt => pt.Tag)
@@ -120,19 +239,23 @@ namespace TheVyshka.Core.Repositories
                 .OrderByDescending(p => p.Id)
                 .ToListAsync());
             
-            
-            return posts;
+            return new PostList
+            {
+                Posts = posts,
+                Count = postCount
+            };
         }
         
-        public async Task<List<PostDto>> GetByTagAsync(int tagId, int page, int count)
+        public async Task<PostList> GetByTagAsync(int tagId, int page, int count)
         {
+            var postCount = _context.Posts.Count();
             var posts = PostConverter.Convert(
                 await (from pq in _context.Posts
                     join pt in _context.PostTags on pq.Id equals pt.PostId
                     join t in _context.Tags on pt.TagId equals t.Id
                     where t.Id == tagId 
                     select pq)
-                    .Skip(count * (page - 1))
+                    .Skip(postCount - count * page)
                     .Take(count)
                     .Include(p => p.PostTag)
                     .ThenInclude(pt => pt.Tag)
@@ -143,8 +266,11 @@ namespace TheVyshka.Core.Repositories
                     .OrderByDescending(p => p.Id)
                     .ToListAsync());
             
-           
-            return posts;
+            return new PostList
+            {
+                Posts = posts,
+                Count = postCount
+            };
         }
 
         public async Task<PostDto> CreateAsync(PostDto item)

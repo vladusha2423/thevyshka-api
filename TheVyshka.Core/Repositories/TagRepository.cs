@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using TheVyshka.Core.EF;
-using TheVyshka.Data.Converters;
+ using TheVyshka.Core.EF;
+ using TheVyshka.Data.Converters;
 using TheVyshka.Data.Dto;
 using TheVyshka.Data.Entities;
 using TheVyshka.Data.Repositories;
@@ -20,17 +20,24 @@ namespace TheVyshka.Core.Repositories
             _context = context;
         }
         
-        public async Task<List<TagDto>> GetAllAsync()
+        public async Task<TagList> GetAllAsync(int page, int count)
         {
+            var tagCount = _context.Tags.Count();
             var tags = TagConverter.Convert(
                 await _context.Tags
-                    .Include(t => t.PostTag)
-                    .ThenInclude(pt => pt.Post)
-                    .OrderByDescending(p => p.Id)
+                    .Skip(tagCount - count * page)
+                    .Take(count)
+                    // .Include(t => t.PostTag)
+                    // .ThenInclude(pt => pt.Post)
+                    // .OrderByDescending(p => p.Id)
+                    .OrderBy(p => p.Id)
                     .ToListAsync());
             
-            
-            return tags;
+            return new TagList
+            {
+                Tags = tags,
+                Count = tagCount
+            };
         }
 
         public async Task<TagDto> GetByIdAsync(int id)

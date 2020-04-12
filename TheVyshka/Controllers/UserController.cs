@@ -66,6 +66,23 @@ namespace TheVyshka.Controllers
                 return StatusCode(500, ex);
             }
         }
+        
+        // [Authorize(Roles = "admin")]
+        // [HttpGet("initial")]
+        // public async Task<ActionResult<bool>> InitialData(string role, Guid id)
+        // {
+        //     try
+        //     {
+        //         var result = await _repo.AddToRoleAsync(id, role);
+        //         if (!result)
+        //             return NotFound();
+        //         return Ok(true);
+        //     }
+        //     catch (Exception ex)
+        //     {
+        //         return StatusCode(500, ex);
+        //     }
+        // }
 
         [Authorize]
         [HttpGet("email/{email}")]

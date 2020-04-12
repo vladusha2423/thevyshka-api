@@ -8,3 +8,15 @@ C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Data\obj\Release\netco
 C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.AssemblyInfo.cs
 C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.dll
 C:\Users\dvv27\Desktop\Проекты\TheVyshka\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.pdb
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\bin\Release\netcoreapp3.1\TheVyshka.Data.deps.json
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\bin\Release\netcoreapp3.1\TheVyshka.Data.runtimeconfig.json
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\bin\Release\netcoreapp3.1\TheVyshka.Data.runtimeconfig.dev.json
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\bin\Release\netcoreapp3.1\TheVyshka.Data.dll
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\bin\Release\netcoreapp3.1\TheVyshka.Data.pdb
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.csprojAssemblyReference.cache
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.csproj.CoreCompileInputs.cache
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.AssemblyInfoInputs.cache
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.AssemblyInfo.cs
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.dll
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.pdb
+D:\Projects\TheVyshka\thevyshka-api-master\TheVyshka.Data\obj\Release\netcoreapp3.1\TheVyshka.Data.genruntimeconfig.cache

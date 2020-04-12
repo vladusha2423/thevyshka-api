@@ -16,13 +16,13 @@ namespace TheVyshka.Controllers
         {
             _repository = repository;
         }
-        
-        [HttpGet]
-        public async Task<IActionResult> Get()
+
+        [HttpGet("{page}-{count}")]
+        public async Task<IActionResult> Get(int page, int count)
         {
             try
             {
-                return Ok(await _repository.GetAllAsync());
+                return Ok(await _repository.GetAllAsync(page, count));
             }
             catch (Exception ex)
             {

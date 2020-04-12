@@ -1,35 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj": {}
+    "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj": {
+    "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
+        "projectUniqueName": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
         "projectName": "TheVyshka.Auth",
-        "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
+        "projectPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
         "packagesPath": "C:\\Users\\dvv27\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Auth\\obj\\",
+        "outputPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Auth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dvv27\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dvv27\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj": {
-                "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj"
+              "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj": {
+                "projectPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj"
               },
-              "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
-                "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj"
+              "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
+                "projectPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj"
               }
             }
           }
@@ -49,7 +51,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[3.1.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -79,33 +81,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj": {
+    "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj",
+        "projectUniqueName": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj",
         "projectName": "TheVyshka.Core",
-        "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj",
+        "projectPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj",
         "packagesPath": "C:\\Users\\dvv27\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Core\\obj\\",
+        "outputPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dvv27\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dvv27\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
-                "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj"
+              "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
+                "projectPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj"
               }
             }
           }
@@ -121,11 +125,15 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[3.1.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -147,26 +155,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
+    "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj",
+        "projectUniqueName": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj",
         "projectName": "TheVyshka.Data",
-        "projectPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj",
+        "projectPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj",
         "packagesPath": "C:\\Users\\dvv27\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dvv27\\Desktop\\Проекты\\TheVyshka\\TheVyshka.Data\\obj\\",
+        "outputPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dvv27\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dvv27\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -189,7 +199,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[3.1.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
@@ -211,7 +221,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

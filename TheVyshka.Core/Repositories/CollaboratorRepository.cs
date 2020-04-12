@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using TheVyshka.Core.EF;
-using TheVyshka.Data.Converters;
+ using TheVyshka.Core.EF;
+ using TheVyshka.Data.Converters;
 using TheVyshka.Data.Dto;
 using TheVyshka.Data.Entities;
 using TheVyshka.Data.Repositories;
@@ -20,17 +20,24 @@ namespace TheVyshka.Core.Repositories
             _context = context;
         }
         
-        public async Task<List<CollaboratorDto>> GetAllAsync()
+        public async Task<CollaboratorList> GetAllAsync(int page, int count)
         {
+            var collabCount = _context.Collaborators.Count();
             var collaborators = CollaboratorConverter.Convert(
                 await _context.Collaborators
-                    .Include(c => c.PostCollaborator)
-                    .ThenInclude(pc => pc.Post)
-                    .OrderByDescending(p => p.Id)
+                    .Skip(collabCount - count * page)
+                    .Take(count)
+                    // .Include(c => c.PostCollaborator)
+                    // .ThenInclude(pc => pc.Post)
+                    .OrderBy(p => p.Id)
                     .ToListAsync());
-            
-            
-            return collaborators;
+
+
+            return new CollaboratorList
+            {
+                Collaborators = collaborators,
+                Count = collabCount
+            };
         }
 
         public async Task<CollaboratorDto> GetByIdAsync(int id)
@@ -87,13 +94,6 @@ namespace TheVyshka.Core.Repositories
             if (collaborator == null)
                 return false;
             _context.Collaborators.Remove(collaborator);
-            // foreach (var postCollaborator in _context.PostCollaborators)
-            // {
-            //     if (postCollaborator.CollaboratorId == collaborator.Id)
-            //     {
-            //         _context.Remove(postCollaborator);
-            //     }
-            // }
             await _context.SaveChangesAsync();
             return true;
         }

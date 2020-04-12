@@ -15,8 +15,8 @@ namespace TheVyshka.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn)
-                .HasAnnotation("ProductVersion", "3.1.2")
+                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn)
+                .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<System.Guid>", b =>
@@ -48,15 +48,15 @@ namespace TheVyshka.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ad03c8e4-b8c6-49da-b550-cb00a6ec16c7"),
-                            ConcurrencyStamp = "74576ecf-42a6-440f-9751-7ee1a5803bd5",
+                            Id = new Guid("4144fafc-976c-4aa5-9fbb-ab6006cbd90d"),
+                            ConcurrencyStamp = "9ad527be-1b48-466b-a78b-f3421e02ff01",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = new Guid("83326d1e-0c9f-4aba-a9a4-afb8e29a3469"),
-                            ConcurrencyStamp = "d53ab9de-570a-458f-8891-3b86ca9fd101",
+                            Id = new Guid("1022a447-e517-4bdc-86d5-0d75f862703e"),
+                            ConcurrencyStamp = "89555e9a-70ce-4a9d-9f9a-2c5c2c9170c2",
                             Name = "editor",
                             NormalizedName = "EDITOR"
                         });
@@ -67,7 +67,7 @@ namespace TheVyshka.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("text");
@@ -90,7 +90,7 @@ namespace TheVyshka.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("text");
@@ -168,7 +168,7 @@ namespace TheVyshka.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn);
 
                     b.Property<string>("Name")
                         .HasColumnType("text");
@@ -183,7 +183,7 @@ namespace TheVyshka.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn);
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp without time zone");
@@ -210,7 +210,7 @@ namespace TheVyshka.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn);
 
                     b.Property<string>("Content")
                         .HasColumnType("text");
@@ -306,7 +306,7 @@ namespace TheVyshka.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn);
 
                     b.Property<string>("Name")
                         .HasColumnType("text");

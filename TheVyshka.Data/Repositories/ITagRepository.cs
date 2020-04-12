@@ -7,7 +7,7 @@ namespace TheVyshka.Data.Repositories
 {
     public interface ITagRepository
     {
-        Task<List<TagDto>> GetAllAsync();
+        Task<TagList> GetAllAsync(int page, int count);
         Task<TagDto> GetByIdAsync(int id);
         Task<TagDto> CreateAsync(TagDto item);
         Task<bool> AddToPostAsync(int postId, int tagId);

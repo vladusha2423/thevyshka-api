@@ -16,13 +16,13 @@ namespace TheVyshka.Controllers
         {
             _repository = repository;
         }
-
-        [HttpGet("{page}-{count}")]
-        public async Task<IActionResult> Get(int page, int count)
+        
+        [HttpGet("{selection}/{page}-{count}")]
+        public async Task<IActionResult> Get(string selection, int page, int count)
         {
             try
             {
-                return Ok(await _repository.GetAllAsync(page, count));
+                return Ok(await _repository.GetAllAsync(selection, page, count));
             }
             catch (Exception ex)
             {
@@ -42,19 +42,45 @@ namespace TheVyshka.Controllers
                 return StatusCode(500, ex);
             }
         }
+
+        [HttpGet("init")]
+        public async Task<IActionResult> Initial()
+        {
+            try
+            {
+                return Ok(await _repository.Initial());
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, ex);
+            }
+        }
         
-        // [HttpGet("rubric/{rubric}/{page}-{count}")]
-        // public async Task<IActionResult> GetByRubric(string rubric, int page, int count)
+        // [HttpGet("links")]
+        // public async Task<IActionResult> GetLinks()
         // {
         //     try
         //     {
-        //         return Ok(await _repository.GetByRubricAsync(rubric, page, count));
+        //         return Ok(await _repository.GetLinks());
         //     }
         //     catch(Exception ex)
         //     {
         //         return StatusCode(500, ex);
         //     }
         // }
+        
+        [HttpGet("category/{category}/{page}-{count}")]
+        public async Task<IActionResult> GetByCategory(int catId, int page, int count)
+        {
+            try
+            {
+                return Ok(await _repository.GetByCategoryAsync(catId, page, count));
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, ex);
+            }
+        }
         
         [HttpGet("collab/{collabId}/{page}-{count}")]
         public async Task<IActionResult> GetByCollaborator(int collabId, int page, int count)

@@ -17,7 +17,7 @@ namespace TheVyshka.Configurations
         {
             services.AddDbContext<TheVyshkaContext>(opt =>
             opt.UseNpgsql(
-                configuration.GetConnectionString("DefaultConnection"),
+                configuration.GetSection("ConnectionStrings")["DefaultConnection"],
                 b => b.MigrationsAssembly("TheVyshka")));
 
             return services;

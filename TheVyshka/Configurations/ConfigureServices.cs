@@ -1,6 +1,5 @@
 ﻿using TheVyshka.Auth.Interfaces;
 using TheVyshka.Auth.Services;
-using TheVyshka.Core.EF;
 using TheVyshka.Core.Repositories;
 using TheVyshka.Data;
 using TheVyshka.Data.Repositories;
@@ -10,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TheVyshka.Core.EF;
 
 namespace TheVyshka.Configurations
 {
@@ -38,6 +38,7 @@ namespace TheVyshka.Configurations
                 .AddTransient<IAuthService, AuthService>()
                 .AddTransient<IPostRepository, PostRepository>()
                 .AddTransient<ITagRepository, TagRepository>()
+                .AddTransient<ICategoryRepository, CategoryRepository>()
                 .AddTransient<ICollaboratorRepository, CollaboratorRepository>();
 
             return services;

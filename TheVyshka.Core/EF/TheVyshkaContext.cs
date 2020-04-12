@@ -44,6 +44,19 @@ namespace TheVyshka.Core.EF
                     }
                 }    
             );
+            builder.UseIdentityAlwaysColumns();
+            builder.Entity<Tag>()
+                .Property(p => p.Id)
+                .ValueGeneratedOnAdd();
+            builder.Entity<Category>()
+                .Property(p => p.Id)
+                .ValueGeneratedOnAdd();
+            builder.Entity<Collaborator>()
+                .Property(p => p.Id)
+                .ValueGeneratedOnAdd();
+            builder.Entity<Post>()
+                .Property(p => p.Id)
+                .ValueGeneratedOnAdd();
             builder.Entity<PostTag>()
                 .HasKey(u => new { u.PostId, u.TagId});
             builder.Entity<PostTag>()

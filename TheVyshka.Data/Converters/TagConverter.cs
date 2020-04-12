@@ -24,6 +24,7 @@ namespace TheVyshka.Data.Converters
                 {
                     pt.Post.PostTag = null;
                     pt.Post.PostCollaborator = null;
+                    pt.Post.PostCategory = null;
                     posts.Add(PostConverter.Convert(pt.Post));
                 }
             

@@ -7,7 +7,7 @@ namespace TheVyshka.Data.Repositories
 {
     public interface ICollaboratorRepository
     {
-        Task<List<CollaboratorDto>> GetAllAsync();
+        Task<CollaboratorList> GetAllAsync(int page, int count);
         Task<CollaboratorDto> GetByIdAsync(int id);
         Task<CollaboratorDto> CreateAsync(CollaboratorDto item);
         Task<bool> AddToPostAsync(int postId, int collaboratorId);

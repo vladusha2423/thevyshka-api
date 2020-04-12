@@ -29,11 +29,11 @@ namespace TheVyshka.Data.Converters
                 {
                     pc.Post.PostTag = null;
                     pc.Post.PostCollaborator = null;
+                    pc.Post.PostCategory = null;
                     posts.Add(PostConverter.Convert(pc.Post));
                 }
             }
             
-
             return new CollaboratorDto
             {
                 Id = collaborator.Id,
