@@ -42,34 +42,8 @@ namespace TheVyshka.Controllers
                 return StatusCode(500, ex);
             }
         }
-
-        [HttpGet("init")]
-        public async Task<IActionResult> Initial()
-        {
-            try
-            {
-                return Ok(await _repository.Initial());
-            }
-            catch(Exception ex)
-            {
-                return StatusCode(500, ex);
-            }
-        }
         
-        // [HttpGet("links")]
-        // public async Task<IActionResult> GetLinks()
-        // {
-        //     try
-        //     {
-        //         return Ok(await _repository.GetLinks());
-        //     }
-        //     catch(Exception ex)
-        //     {
-        //         return StatusCode(500, ex);
-        //     }
-        // }
-        
-        [HttpGet("category/{category}/{page}-{count}")]
+        [HttpGet("category/{catId}/{page}-{count}")]
         public async Task<IActionResult> GetByCategory(int catId, int page, int count)
         {
             try

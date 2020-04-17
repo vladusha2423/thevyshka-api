@@ -48,3 +48,15 @@ D:\Projects\TheVyshka\TheVyshka\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka
 D:\Projects\TheVyshka\TheVyshka\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.dll
 D:\Projects\TheVyshka\TheVyshka\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.pdb
 D:\Projects\TheVyshka\TheVyshka\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.genruntimeconfig.cache
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.deps.json
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.runtimeconfig.json
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.runtimeconfig.dev.json
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.dll
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.pdb
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.csprojAssemblyReference.cache
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.csproj.CoreCompileInputs.cache
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.AssemblyInfoInputs.cache
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.AssemblyInfo.cs
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.dll
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.pdb
+D:\Projects\TheVyshka\thevyshka-api\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.genruntimeconfig.cache

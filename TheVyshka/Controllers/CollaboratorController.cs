@@ -58,12 +58,12 @@ namespace TheVyshka.Controllers
         }
         
         [Authorize]
-        [HttpPost("add/{postId}/{collaboratorId}")]
-        public async Task<IActionResult> Post(int postId, int collaboratorId)
+        [HttpPost("add/{postId}/{collaboratorId}/{role}")]
+        public async Task<IActionResult> Post(int postId, int collaboratorId, string role)
         {
             try
             {
-                return Ok(await _repository.AddToPostAsync(postId, collaboratorId));
+                return Ok(await _repository.AddToPostAsync(postId, collaboratorId, role));
             }
             catch (Exception ex)
             {

@@ -23,10 +23,6 @@ namespace TheVyshka.Core.Repositories
         {
             var categories = CategoryConverter.Convert(
                 await _context.Categories
-                    // .Include(c => c.PostCategory)
-                    // .ThenInclude(pc => pc.Post)
-                    // .OrderByDescending(c => c.Id)
-                    .OrderBy(c => c.Id)
                     .ToListAsync());
             
             return categories;
@@ -36,8 +32,8 @@ namespace TheVyshka.Core.Repositories
         {
             return CategoryConverter.Convert(
                 await _context.Categories
-                    .Include(c => c.PostCategory)
-                    .ThenInclude(pc => pc.Post)
+                    // .Include(c => c.PostCategory)
+                    // .ThenInclude(pc => pc.Post)
                     .FirstOrDefaultAsync(c => c.Id == id));
         }
 

@@ -23,13 +23,31 @@ namespace TheVyshka.Core.Repositories
         public async Task<CollaboratorList> GetAllAsync(int page, int count)
         {
             var collabCount = _context.Collaborators.Count();
+            var take = 0;
+            var skip = 0;
+            if (count * page < collabCount)
+            {
+                skip = collabCount - count * page;
+                take = count;
+            }
+            else if (count * page > collabCount && count * (page - 1) < collabCount)
+            {
+                skip = 0;
+                take = collabCount - count * (page - 1);
+            }
+            else
+                return new CollaboratorList
+                {
+                    Collaborators = new List<CollaboratorDto>(),
+                    Count = 0
+                };
             var collaborators = CollaboratorConverter.Convert(
                 await _context.Collaborators
-                    .Skip(collabCount - count * page)
-                    .Take(count)
+                    .Skip(skip)
+                    .Take(take)
                     // .Include(c => c.PostCollaborator)
                     // .ThenInclude(pc => pc.Post)
-                    .OrderBy(p => p.Id)
+                    .OrderByDescending(p => p.Id)
                     .ToListAsync());
 
 
@@ -44,8 +62,8 @@ namespace TheVyshka.Core.Repositories
         {
             return CollaboratorConverter.Convert(
                 await _context.Collaborators
-                    .Include(c => c.PostCollaborator)
-                    .ThenInclude(pc => pc.Post)
+                    // .Include(c => c.PostCollaborator)
+                    // .ThenInclude(pc => pc.Post)
                     .FirstOrDefaultAsync(c => c.Id == id));
         }
 
@@ -57,12 +75,13 @@ namespace TheVyshka.Core.Repositories
             return CollaboratorConverter.Convert(collaborator.Entity);
         }
         
-        public async Task<bool> AddToPostAsync(int postId, int collaboratorId)
+        public async Task<bool> AddToPostAsync(int postId, int collaboratorId, string role)
         {
             await _context.PostCollaborators.AddAsync(new PostCollaborator
             {
                 PostId = postId,
-                CollaboratorId = collaboratorId
+                CollaboratorId = collaboratorId,
+                Role = role
             });
             await _context.SaveChangesAsync();
             return true;

@@ -17,7 +17,7 @@ namespace TheVyshka.Configurations
         {
             services.AddDbContext<TheVyshkaContext>(opt =>
             opt.UseNpgsql(
-                configuration.GetSection("ConnectionStrings")["DefaultConnection"],
+                "Host=localhost;Port=5432;Database=thevyshkadb;Username=postgres;Password=2423",
                 b => b.MigrationsAssembly("TheVyshka")));
 
             return services;

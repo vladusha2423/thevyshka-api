@@ -48,15 +48,15 @@ namespace TheVyshka.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("4144fafc-976c-4aa5-9fbb-ab6006cbd90d"),
-                            ConcurrencyStamp = "9ad527be-1b48-466b-a78b-f3421e02ff01",
+                            Id = new Guid("aba730f9-b9df-4e5f-afe1-e5d8433b0cf2"),
+                            ConcurrencyStamp = "2aa93826-e6a8-4427-849e-2a763c75d23f",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = new Guid("1022a447-e517-4bdc-86d5-0d75f862703e"),
-                            ConcurrencyStamp = "89555e9a-70ce-4a9d-9f9a-2c5c2c9170c2",
+                            Id = new Guid("296efd51-bfd0-4403-89d4-f9c1b6f4dff8"),
+                            ConcurrencyStamp = "422bdd3f-fa7b-4166-9c06-e288ab197eb4",
                             Name = "editor",
                             NormalizedName = "EDITOR"
                         });

@@ -50,65 +50,11 @@ namespace TheVyshka.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Collaborators",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(nullable: true),
-                    Role = table.Column<string>(nullable: true),
-                    Date = table.Column<DateTime>(nullable: false),
-                    Description = table.Column<string>(nullable: true),
-                    Links = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Collaborators", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Posts",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Title = table.Column<string>(nullable: true),
-                    Rubric = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true),
-                    Date = table.Column<DateTime>(nullable: false),
-                    ModifiedDate = table.Column<DateTime>(nullable: false),
-                    Status = table.Column<string>(nullable: true),
-                    ViewType = table.Column<string>(nullable: true),
-                    LinkName = table.Column<string>(nullable: true),
-                    Image = table.Column<string>(nullable: true),
-                    Podcast = table.Column<string>(nullable: true),
-                    Content = table.Column<string>(nullable: true),
-                    ViewCount = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Posts", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Tags",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Tags", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn),
                     RoleId = table.Column<Guid>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true)
@@ -129,7 +75,7 @@ namespace TheVyshka.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityAlwaysColumn),
                     UserId = table.Column<Guid>(nullable: false),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true)
@@ -208,64 +154,15 @@ namespace TheVyshka.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.CreateTable(
-                name: "PostCollaborators",
-                columns: table => new
-                {
-                    CollaboratorId = table.Column<int>(nullable: false),
-                    PostId = table.Column<int>(nullable: false),
-                    Role = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_PostCollaborators", x => new { x.PostId, x.CollaboratorId });
-                    table.ForeignKey(
-                        name: "FK_PostCollaborators_Collaborators_CollaboratorId",
-                        column: x => x.CollaboratorId,
-                        principalTable: "Collaborators",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_PostCollaborators_Posts_PostId",
-                        column: x => x.PostId,
-                        principalTable: "Posts",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "PostTags",
-                columns: table => new
-                {
-                    PostId = table.Column<int>(nullable: false),
-                    TagId = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_PostTags", x => new { x.PostId, x.TagId });
-                    table.ForeignKey(
-                        name: "FK_PostTags_Posts_PostId",
-                        column: x => x.PostId,
-                        principalTable: "Posts",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_PostTags_Tags_TagId",
-                        column: x => x.TagId,
-                        principalTable: "Tags",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
+            
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("5f4c5892-02f9-435d-9b47-87ea03653887"), "1b7740c2-4906-4a14-b5ba-968c5357747d", "admin", "ADMIN" },
-                    { new Guid("bdc9f634-6757-4c54-bd46-65a814886525"), "e04d21ab-da9e-41e3-ac27-28ed98934324", "editor", "EDITOR" },
-                    { new Guid("aaca63fd-1f60-4d80-8993-0b71b9e43108"), "ba281c33-0a32-4a53-9bab-5d0b5340955f", "user", "USER" }
+                    { new Guid("aba730f9-b9df-4e5f-afe1-e5d8433b0cf2"), "2aa93826-e6a8-4427-849e-2a763c75d23f", "admin", "ADMIN" },
+                    { new Guid("296efd51-bfd0-4403-89d4-f9c1b6f4dff8"), "422bdd3f-fa7b-4166-9c06-e288ab197eb4", "editor", "EDITOR" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -304,16 +201,6 @@ namespace TheVyshka.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PostCollaborators_CollaboratorId",
-                table: "PostCollaborators",
-                column: "CollaboratorId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_PostTags_TagId",
-                table: "PostTags",
-                column: "TagId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -334,25 +221,10 @@ namespace TheVyshka.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "PostCollaborators");
-
-            migrationBuilder.DropTable(
-                name: "PostTags");
-
-            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
-                name: "Collaborators");
-
-            migrationBuilder.DropTable(
-                name: "Posts");
-
-            migrationBuilder.DropTable(
-                name: "Tags");
         }
     }
 }

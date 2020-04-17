@@ -23,14 +23,31 @@ namespace TheVyshka.Core.Repositories
         public async Task<TagList> GetAllAsync(int page, int count)
         {
             var tagCount = _context.Tags.Count();
+            var take = 0;
+            var skip = 0;
+            if (count * page < tagCount)
+            {
+                skip = tagCount - count * page;
+                take = count;
+            }
+            else if (count * page > tagCount && count * (page - 1) < tagCount)
+            {
+                skip = 0;
+                take = tagCount - count * (page - 1);
+            }
+            else
+                return new TagList
+                {
+                    Tags = new List<TagDto>(),
+                    Count = 0
+                };
             var tags = TagConverter.Convert(
                 await _context.Tags
-                    .Skip(tagCount - count * page)
-                    .Take(count)
+                    .Skip(skip)
+                    .Take(take)
                     // .Include(t => t.PostTag)
                     // .ThenInclude(pt => pt.Post)
-                    // .OrderByDescending(p => p.Id)
-                    .OrderBy(p => p.Id)
+                    .OrderByDescending(p => p.Id)
                     .ToListAsync());
             
             return new TagList
@@ -44,8 +61,8 @@ namespace TheVyshka.Core.Repositories
         {
             return TagConverter.Convert(
                 await _context.Tags
-                    .Include(t => t.PostTag)
-                    .ThenInclude(pt => pt.Post)
+                    // .Include(t => t.PostTag)
+                    // .ThenInclude(pt => pt.Post)
                     .FirstOrDefaultAsync(t => t.Id == id));
         }
 

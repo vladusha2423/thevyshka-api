@@ -6551,11 +6551,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
+      "projectUniqueName": "D:\\Projects\\TheVyshka\\thevyshka-api\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
       "projectName": "TheVyshka.Auth",
-      "projectPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
+      "projectPath": "D:\\Projects\\TheVyshka\\thevyshka-api\\TheVyshka.Auth\\TheVyshka.Auth.csproj",
       "packagesPath": "C:\\Users\\dvv27\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Auth\\obj\\",
+      "outputPath": "D:\\Projects\\TheVyshka\\thevyshka-api\\TheVyshka.Auth\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dvv27\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6571,11 +6571,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj": {
-              "projectPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Core\\TheVyshka.Core.csproj"
+            "D:\\Projects\\TheVyshka\\thevyshka-api\\TheVyshka.Core\\TheVyshka.Core.csproj": {
+              "projectPath": "D:\\Projects\\TheVyshka\\thevyshka-api\\TheVyshka.Core\\TheVyshka.Core.csproj"
             },
-            "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj": {
-              "projectPath": "D:\\Projects\\TheVyshka\\TheVyshka\\TheVyshka.Data\\TheVyshka.Data.csproj"
+            "D:\\Projects\\TheVyshka\\thevyshka-api\\TheVyshka.Data\\TheVyshka.Data.csproj": {
+              "projectPath": "D:\\Projects\\TheVyshka\\thevyshka-api\\TheVyshka.Data\\TheVyshka.Data.csproj"
             }
           }
         }

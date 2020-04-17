@@ -13,8 +13,8 @@
       <ObjectId>32824</ObjectId>
       <Owner>postgres</Owner>
       <IntrospectionStateNumber>703</IntrospectionStateNumber>
-      <Relations>sequence|table|32884|32886|1
-sequence|table|32899|32901|1
+      <Relations>sequence|table|32899|32901|1
+sequence|table|32884|32886|1
 </Relations>
     </database>
     <database id="4" parent="1" name="TheVyshkaDB1">
@@ -33,10 +33,10 @@ sequence|table|49276|49278|1
       <Owner>postgres</Owner>
       <IntrospectionStateNumber>725</IntrospectionStateNumber>
       <Relations>sequence|table|49447|49449|1
-sequence|table|49402|49404|1
-sequence|table|49412|49414|1
 sequence|table|49422|49424|1
 sequence|table|49432|49434|1
+sequence|table|49412|49414|1
+sequence|table|49402|49404|1
 </Relations>
     </database>
     <database id="6" parent="1" name="postgres">

@@ -4,8 +4,8 @@
     <e p="C:\Users\dvv27\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\dvv27\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\dvv27\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\dvv27\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TheVyshka.-582443041.00" t="ExcludeRecursive" />
-    <e p="C:\Users\dvv27\Desktop\Проекты\TheVyshka" t="IncludeFlat">
+    <e p="C:\Users\dvv27\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TheVyshka.-827091798.00" t="ExcludeRecursive" />
+    <e p="D:\Projects\TheVyshka\thevyshka-api" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="TheVyshka" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
@@ -18,31 +18,17 @@
         </e>
         <e p="Controllers" t="Include">
           <e p="AuthConroller.cs" t="Include" />
+          <e p="CategoryController.cs" t="Include" />
           <e p="CollaboratorController.cs" t="Include" />
           <e p="PostController.cs" t="Include" />
           <e p="TagController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20200315135125_init.cs" t="Include" />
-          <e p="20200315135125_init.Designer.cs" t="Include" />
-          <e p="20200315135550_init1.cs" t="Include" />
-          <e p="20200315135550_init1.Designer.cs" t="Include" />
-          <e p="20200315185143_addCategory.cs" t="Include" />
-          <e p="20200315185143_addCategory.Designer.cs" t="Include" />
-          <e p="20200315190146_addWpId_to_Post.cs" t="Include" />
-          <e p="20200315190146_addWpId_to_Post.Designer.cs" t="Include" />
-          <e p="20200315190701_delete_rubric.cs" t="Include" />
-          <e p="20200315190701_delete_rubric.Designer.cs" t="Include" />
-          <e p="20200316115727_add_categories_into_context.cs" t="Include" />
-          <e p="20200316115727_add_categories_into_context.Designer.cs" t="Include" />
-          <e p="20200316155221_PostCollaborator_PK_Role.cs" t="Include" />
-          <e p="20200316155221_PostCollaborator_PK_Role.Designer.cs" t="Include" />
+          <e p="20200413102549_init.cs" t="Include" />
+          <e p="20200413102549_init.Designer.cs" t="Include" />
           <e p="TheVyshkaContextModelSnapshot.cs" t="Include" />
         </e>
-        <e p="mono_crash.mem.11728.1.blob" t="Include" />
-        <e p="mono_crash.mem.20087.1.blob" t="Include" />
-        <e p="mono_crash.mem.22515.1.blob" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -53,6 +39,9 @@
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="FolderProfile.pubxml" t="Include" />
+          </e>
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="TheVyshka.csproj" t="IncludeRecursive" />
@@ -92,6 +81,7 @@
           </e>
         </e>
         <e p="Repositories" t="Include">
+          <e p="CategoryRepository.cs" t="Include" />
           <e p="CollaboratorRepository.cs" t="Include" />
           <e p="PostRepository.cs" t="Include" />
           <e p="TagRepository.cs" t="Include" />
@@ -102,15 +92,20 @@
       <e p="TheVyshka.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Converters" t="Include">
+          <e p="CategoryConverter.cs" t="Include" />
           <e p="CollaboratorConverter.cs" t="Include" />
           <e p="PostConverter.cs" t="Include" />
           <e p="TagConverter.cs" t="Include" />
           <e p="UserConverter.cs" t="Include" />
         </e>
         <e p="Dto" t="Include">
+          <e p="CategoryDto.cs" t="Include" />
           <e p="CollaboratorDto.cs" t="Include" />
+          <e p="CollaboratorList.cs" t="Include" />
           <e p="PostDto.cs" t="Include" />
+          <e p="PostList.cs" t="Include" />
           <e p="TagDto.cs" t="Include" />
+          <e p="TagList.cs" t="Include" />
           <e p="UserDto.cs" t="Include" />
         </e>
         <e p="Entities" t="Include">
@@ -132,6 +127,7 @@
           </e>
         </e>
         <e p="Repositories" t="Include">
+          <e p="ICategoryRepository.cs" t="Include" />
           <e p="ICollaboratorRepository.cs" t="Include" />
           <e p="IPostRepository.cs" t="Include" />
           <e p="ITagRepository.cs" t="Include" />

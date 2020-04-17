@@ -10,7 +10,7 @@ namespace TheVyshka.Data.Repositories
         Task<CollaboratorList> GetAllAsync(int page, int count);
         Task<CollaboratorDto> GetByIdAsync(int id);
         Task<CollaboratorDto> CreateAsync(CollaboratorDto item);
-        Task<bool> AddToPostAsync(int postId, int collaboratorId);
+        Task<bool> AddToPostAsync(int postId, int collaboratorId, string role);
         Task<bool> DeleteFromPostAsync(int postId, int collaboratorId);
         Task<bool> UpdateAsync(CollaboratorDto item);
         Task<bool> DeleteAsync(int id);

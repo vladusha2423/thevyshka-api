@@ -10,8 +10,6 @@ namespace TheVyshka.Data.Repositories
     {
         Task<PostList> GetAllAsync(string selection, int page, int count);
         Task<PostDto> GetByIdAsync(int id);
-        // Task<List<PostCollaborator>> GetLinks();
-        Task<bool> Initial();
         Task<PostList> GetByCollaboratorAsync(int collabId, int page, int count);
         Task<PostList> GetByCategoryAsync(int collabId, int page, int count);
         Task<PostList> GetByTagAsync(int tagId, int page, int count);
