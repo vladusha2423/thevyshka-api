@@ -53,7 +53,7 @@
 
 Ответ: 
 ```
-Post
+Object<Post>
 ```
 - ### Список статей по ID рубрики
 
@@ -116,6 +116,47 @@ Post
 	count: string,
 	posts: List<Post>
 }
+```
+
+- ### Добавление статьи
+
+Запрос:
+`Post /api/post/`
+
+Тело запроса:
+```
+{
+  "title": string,
+  "description": string,
+  "date": "0001-01-01T00:00:00",
+  "modifiedDate": "0001-01-01T00:00:00",
+  "status": string,
+  "viewType": string,
+  "linkName": string,
+  "image": string,
+  "podcast": string,
+  "content": string,
+  "viewCount": int
+}
+```
+| Аргумент  | Значение |
+| :------------ | :------------ | :------------ |
+| title  | Заголовок статьи |
+| description  | Описание статьи |
+| date  | Дата создания |
+| modifiedDate  | Дата последнего изменения |
+| status  | Статус (published/draft) |
+| viewType  | Тип отображения превью на главной странице (in dev) |
+| linkName  | С какого по счету элемента |
+| image  | Ссылка на изображение(баннер) |
+| podcast  | Ссылка на подкаст (если таковой имеется) |
+| content  | Контент статьи (html разметка) |
+| viewCount  | Количество просмотров |
+
+
+Ответ: 
+```
+Object<Post>
 ```
 
 ## Рубрики
