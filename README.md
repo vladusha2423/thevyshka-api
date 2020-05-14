@@ -53,10 +53,7 @@
 
 Ответ: 
 ```
-{
-	count: string,
-	posts: List<Post>
-}
+Post
 ```
 - ### Список статей по ID рубрики
 
