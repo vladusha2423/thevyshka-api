@@ -334,6 +334,7 @@ Boolean(true/false)
   "name": string,
   "role": string,
   "date": datetime,
+  "photo": string,
   "description": string,
   "links": string
 }
@@ -344,6 +345,7 @@ Boolean(true/false)
 | name  | Имя участника |
 | role  | Роль участника |
 | date  | Дата первого участия |
+| photo  | Ава участника |
 | description  | Описание участника |
 | links  | Сслыка на ВК (in dev) |
 
@@ -392,6 +394,7 @@ Object<Collab>
 {
   "name": string,
   "role": string,
+  "photo": string,
   "date": datetime,
   "description": string,
   "links": string
@@ -416,6 +419,7 @@ Object<Collaborator>
   "id": int,
   "name": string,
   "role": string,
+  "photo": string,
   "date": datetime,
   "description": string,
   "links": string
