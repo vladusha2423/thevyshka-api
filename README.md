@@ -49,7 +49,7 @@
 Ответ: 
 ```
 {
-	count: string,
+	count: int,
 	posts: List<Post>
 }
 ```
@@ -83,7 +83,7 @@ Object<Post>
 Ответ: 
 ```
 {
-	count: string,
+	count: int,
 	posts: List<Post>
 }
 ```
@@ -104,7 +104,7 @@ Object<Post>
 Ответ: 
 ```
 {
-	count: string,
+	count: int,
 	posts: List<Post>
 }
 ```
@@ -126,7 +126,7 @@ Object<Post>
 Ответ: 
 ```
 {
-	count: string,
+	count: int,
 	posts: List<Post>
 }
 ```
@@ -148,7 +148,7 @@ Object<Post>
 Ответ: 
 ```
 {
-	count: string,
+	count: int,
 	posts: List<Post>
 }
 ```
@@ -251,7 +251,7 @@ Boolean(true/false)
 Ответ: 
 ```
 {
-	count: string,
+	count: int,
 	tags: List<Tag>
 }
 ```
