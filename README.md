@@ -16,7 +16,10 @@
   "image": string,
   "podcast": string,
   "content": string,
-  "viewCount": int
+  "viewCount": int,
+  "collaborators": List<Collaborator>,
+  "tags": List<Tag>,
+  "categories": List<Category>,
 }
 ```
 | Аргумент  | Значение |
