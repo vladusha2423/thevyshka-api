@@ -250,6 +250,17 @@ Boolean(true/false)
 | begin  | int  | С какого по счету элемента |
 | end  | int  | По какой элемент |
 
+- ### Поиск по тегам
+
+Запрос:
+`GET /api/tag/search/{query}/{begin}-{end}`
+
+| Параметр  | Тип данных  | Значение |
+| :------------ | :------------ | :------------ |
+| query  | string  | Поисковой запрос |
+| begin  | int  | С какого по счету элемента |
+| end  | int  | По какой элемент |
+
 
 Ответ: 
 ```
@@ -368,6 +379,27 @@ Boolean(true/false)
 {
 	count: string,
 	tags: List<Collaborator>
+}
+```
+
+
+- ### Поиск по участникам
+
+Запрос:
+`GET /api/collab/search/{query}/{begin}-{end}`
+
+| Параметр  | Тип данных  | Значение |
+| :------------ | :------------ | :------------ |
+| query  | string  | Поисковой запрос |
+| begin  | int  | С какого по счету элемента |
+| end  | int  | По какой элемент |
+
+
+Ответ: 
+```
+{
+	count: int,
+	collaborators: List<Collaborator>
 }
 ```
 
